@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"></android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#6CD67A"
+        android:textAlignment="center">
+
+    </android.support.v7.widget.AppCompatSpinner>
+
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="300dp"
+        android:background="@color/white"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <View
+                android:layout_width="110dp"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FAFCC4">
+
+            </View>
+
+            <View
+                android:layout_width="110dp"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#F8BABA">
+
+            </View>
+
+            <View
+                android:layout_width="110dp"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FF9F7B">
+
+            </View>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="โต๊ะที่ชำระเงินแล้ว"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="โต๊ะที่รอชำระเงิน"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
