@@ -9,15 +9,14 @@
     </style>
 
     <style name="marginCVmenu">
+        <item name="android:layout_marginBottom">15dp</item>
         <item name="android:layout_marginLeft">15dp</item>
         <item name="android:layout_marginRight">15dp</item>
-        <item name="android:layout_marginBottom">15dp</item>
     </style>
 
     <style name="font_card_main">
         <item name="android:textColor">@color/black</item>
-        <item name="android:textAlignment">center</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
 </resources>
