@@ -58,30 +58,24 @@
 
     </RelativeLayout>
 
-    <LinearLayout
+    <android.support.design.widget.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:weightSum="2">
+        android:id="@+id/tablayoutpay"
+        android:background="#F3F3F3"
+        android:minHeight="?attr/actionBarSize">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="โต๊ะที่ชำระเงินแล้ว"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:layout_weight="1"/>
+    </android.support.design.widget.TabLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="โต๊ะที่รอชำระเงิน"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:layout_weight="1"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pager">
 
-    </LinearLayout>
+    </android.support.v4.view.ViewPager>
+
+
+
 
 
 
