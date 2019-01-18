@@ -19,8 +19,8 @@ public class PaymentActivity extends AppCompatActivity implements FragmentPay.On
         setContentView(R.layout.activity_payment);
 
         TabLayout tabLayout = (TabLayout)findViewById(R.id.tablayoutpay);
-        tabLayout.addTab(tabLayout.newTab().setText("Pay"));
-        tabLayout.addTab(tabLayout.newTab().setText("Not Pay"));
+        tabLayout.addTab(tabLayout.newTab().setText("โต๊ะที่ชำระแล้ว"));
+        tabLayout.addTab(tabLayout.newTab().setText("โต๊ะที่รอชำระ"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager)findViewById(R.id.pager);

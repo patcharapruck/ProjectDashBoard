@@ -261,6 +261,7 @@
 
             <android.support.v7.widget.CardView
                 style="@style/marginCVmenu"
+                android:id="@+id/Cv_pay"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:cardBackgroundColor="@color/white"
@@ -279,21 +280,23 @@
                     <android.support.v7.widget.CardView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:id="@+id/cv_in_pay"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginBottom="5dp"
                         app:cardBackgroundColor="#F4D4BB"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/imgpay"
                             android:layout_width="28dp"
                             android:layout_height="28dp"
                             android:layout_gravity="center"
-                            android:background="@drawable/im5"
+                            android:background="@drawable/im5" />
 
-                            />
                     </android.support.v7.widget.CardView>
 
                     <TextView
+                        android:id="@+id/menupay"
                         style="@style/font_card_main"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
