@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 
 import com.example.pchrp.projectdashboard.R;
 
-public class Fragmentmain extends Fragment {
+public class FragmentBill extends Fragment {
 
-    public Fragmentmain() {
+    public FragmentBill() {
         super();
     }
 
-    public static Fragmentmain newInstance() {
-        Fragmentmain fragment = new Fragmentmain();
+    public static FragmentBill newInstance() {
+        FragmentBill fragment = new FragmentBill();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -24,7 +24,7 @@ public class Fragmentmain extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+        View rootView = inflater.inflate(R.layout.frag_bill_income, container, false);
         initInstances(rootView);
         return rootView;
     }
