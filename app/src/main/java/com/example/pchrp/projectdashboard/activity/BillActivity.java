@@ -17,7 +17,6 @@ public class BillActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.frame_bill, FragmentBill.newInstance())
                     .commit();
-
         }
 
     }

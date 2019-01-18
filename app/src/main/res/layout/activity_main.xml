@@ -79,6 +79,7 @@
 
 
             <android.support.v7.widget.CardView
+                android:id="@+id/Cv_bill"
                 style="@style/marginCVmenu"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -96,6 +97,7 @@
                     android:orientation="vertical">
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cv_in_bill"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
@@ -104,6 +106,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/imgbill"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_gravity="center"
@@ -113,6 +116,7 @@
                     </android.support.v7.widget.CardView>
 
                     <TextView
+                        android:id="@+id/menutextbill"
                         style="@style/font_card_main"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

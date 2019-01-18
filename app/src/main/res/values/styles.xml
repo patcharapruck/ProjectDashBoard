@@ -26,9 +26,10 @@
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="font_card_bill" parent="font_card_main">
+    <style name="font_card_bill">
         <item name="android:textColor">@color/text_money_pay</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
 </resources>
