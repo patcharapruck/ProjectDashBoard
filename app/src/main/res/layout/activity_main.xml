@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
-            android:background="#FAFAFA">
+            android:background="@color/bg2">
 
         </View>
 
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:background="#DADADA">
+            android:background="@color/bg1">
 
         </View>
 
@@ -39,21 +39,20 @@
             android:layout_height="0dp"
             android:layout_weight="3.5">
 
-                <ImageView
+            <ImageView
                 android:id="@+id/logo"
                 android:layout_width="230dp"
                 android:layout_height="100dp"
                 android:layout_centerInParent="true"
-                android:background="@drawable/krystal"/>
+                android:background="@drawable/krystal" />
+
             <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
                 android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:text="Day / month / year " />
-
-
+                android:gravity="center"
+                android:text="Day / month / year " />
 
 
             <TextView

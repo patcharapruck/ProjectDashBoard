@@ -32,4 +32,23 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <style name="font_pay" parent="font_pay_data">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="font_pay_data">
+        <item name="android:textColor">@color/color_pay</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="font_notpay" parent="font_notpay_data">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="font_notpay_data" parent="font_pay_data">
+        <item name="android:textColor">@color/color_not_pay</item>
+    </style>
+
 </resources>
