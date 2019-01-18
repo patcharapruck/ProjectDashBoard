@@ -1,294 +1,298 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:fillViewport="true">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.5"
-            android:background="#EFEFEF">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        </View>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:background="#EFEFEF">
 
-        <View
+            </View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="#D5D6D8">
+
+            </View>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:background="#D5D6D8">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
 
-        </View>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="10">
-
-        <RelativeLayout
-            android:layout_weight="3.5"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
-
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="100dp"
-                android:background="@color/white"
-                android:layout_centerInParent="true"/>
-
-
-
-        </RelativeLayout>
-
-
-        <android.support.v7.widget.GridLayout
-            android:layout_weight="6.5"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:padding="5dp"
-            app:columnCount="2"
-            app:rowCount="3"
-            app:alignmentMode="alignMargins"
-            app:columnOrderPreserved="false">
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
-                style="@style/marginCVmenu"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                android:layout_weight="3.5">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="3dp"
-                    android:orientation="vertical">
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white" />
 
-                    <android.support.v7.widget.CardView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_gravity="center_horizontal"
-                        app:cardBackgroundColor="#FFB4BB"
-                        app:cardCornerRadius="20dp"
-                        android:layout_marginBottom="5dp">
 
-                    </android.support.v7.widget.CardView>
+            </RelativeLayout>
 
-                    <TextView
-                        style="@style/font_card_main"
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.5"
+                android:padding="5dp"
+                app:alignmentMode="alignMargins"
+                app:columnCount="2"
+                app:columnOrderPreserved="false"
+                app:rowCount="3">
+
+
+                <android.support.v7.widget.CardView
+                    style="@style/marginCVmenu"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="รายรับตามบิล"
-                        android:textAlignment="center" />
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="3dp"
+                        android:orientation="vertical">
 
-                </LinearLayout>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp"
+                            app:cardBackgroundColor="#FFB4BB"
+                            app:cardCornerRadius="20dp">
 
-            </android.support.v7.widget.CardView>
+                        </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                style="@style/marginCVmenu"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                        <TextView
+                            style="@style/font_card_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="รายรับตามบิล"
+                            android:textAlignment="center" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="3dp"
+                    </LinearLayout>
 
-                    android:orientation="vertical">
+                </android.support.v7.widget.CardView>
 
-                    <android.support.v7.widget.CardView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:cardCornerRadius="20dp"
-                        android:layout_gravity="center_horizontal"
-                        app:cardBackgroundColor="#FFDFB9"
-                        android:layout_marginBottom="5dp">
+                <android.support.v7.widget.CardView
+                    style="@style/marginCVmenu"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                    </android.support.v7.widget.CardView>
-
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="รายรับจริง"
-                        style="@style/font_card_main" />
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="3dp"
 
-                </LinearLayout>
+                        android:orientation="vertical">
 
-            </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp"
+                            app:cardBackgroundColor="#FFDFB9"
+                            app:cardCornerRadius="20dp">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                style="@style/marginCVmenu"
-                app:cardBackgroundColor="@color/white"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="15dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                        </android.support.v7.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="3dp"
-                    android:orientation="vertical">
+                        <TextView
+                            style="@style/font_card_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="รายรับจริง" />
 
-                    <android.support.v7.widget.CardView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:cardCornerRadius="20dp"
-                        android:layout_gravity="center_horizontal"
-                        app:cardBackgroundColor="#BAFFC9"
-                        android:layout_marginBottom="5dp">
+                    </LinearLayout>
 
-                    </android.support.v7.widget.CardView>
+                </android.support.v7.widget.CardView>
 
-                    <TextView
+                <android.support.v7.widget.CardView
+                    style="@style/marginCVmenu"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="บัตรเครดิต"
-                        style="@style/font_card_main"/>
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="3dp"
+                        android:orientation="vertical">
 
-                </LinearLayout>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp"
+                            app:cardBackgroundColor="#BAFFC9"
+                            app:cardCornerRadius="20dp">
 
-            </android.support.v7.widget.CardView>
+                        </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                style="@style/marginCVmenu"
-                app:cardBackgroundColor="@color/white"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="15dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                        <TextView
+                            style="@style/font_card_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="บัตรเครดิต" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="3dp"
-                    android:orientation="vertical">
+                    </LinearLayout>
 
-                    <android.support.v7.widget.CardView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:cardCornerRadius="20dp"
-                        android:layout_gravity="center_horizontal"
-                        app:cardBackgroundColor="#BAE1FF"
-                        android:layout_marginBottom="5dp">
+                </android.support.v7.widget.CardView>
 
-                    </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    style="@style/marginCVmenu"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ปริมาณเครื่องดื่ม"
-                        style="@style/font_card_main"/>
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="3dp"
+                        android:orientation="vertical">
 
-                </LinearLayout>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp"
+                            app:cardBackgroundColor="#BAE1FF"
+                            app:cardCornerRadius="20dp">
 
-            </android.support.v7.widget.CardView>
+                        </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                style="@style/marginCVmenu"
-                app:cardBackgroundColor="@color/white"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="15dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                        <TextView
+                            style="@style/font_card_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ปริมาณเครื่องดื่ม" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="3dp"
-                    android:orientation="vertical">
+                    </LinearLayout>
 
-                    <android.support.v7.widget.CardView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:cardCornerRadius="20dp"
-                        android:layout_gravity="center_horizontal"
-                        app:cardBackgroundColor="#F4D4BB"
-                        android:layout_marginBottom="5dp">
+                </android.support.v7.widget.CardView>
 
-                    </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    style="@style/marginCVmenu"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ยอดชำระปัจจุบัน"
-                        style="@style/font_card_main"/>
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="3dp"
+                        android:orientation="vertical">
 
-                </LinearLayout>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp"
+                            app:cardBackgroundColor="#F4D4BB"
+                            app:cardCornerRadius="20dp">
 
-            </android.support.v7.widget.CardView>
+                        </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                style="@style/marginCVmenu"
-                app:cardBackgroundColor="@color/white"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="15dp"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1">
+                        <TextView
+                            style="@style/font_card_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ยอดชำระปัจจุบัน" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="3dp"
-                    android:orientation="vertical">
+                    </LinearLayout>
 
-                    <android.support.v7.widget.CardView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:cardCornerRadius="20dp"
-                        android:layout_gravity="center_horizontal"
-                        app:cardBackgroundColor="#EBDFC7"
-                        android:layout_marginBottom="5dp">
+                </android.support.v7.widget.CardView>
 
-                    </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    style="@style/marginCVmenu"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="เปรียบเทียบรายรับ"
-                        style="@style/font_card_main"/>
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="3dp"
+                        android:orientation="vertical">
 
-                </LinearLayout>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp"
+                            app:cardBackgroundColor="#EBDFC7"
+                            app:cardCornerRadius="20dp">
 
-            </android.support.v7.widget.CardView>
+                        </android.support.v7.widget.CardView>
 
-        </android.support.v7.widget.GridLayout>
+                        <TextView
+                            style="@style/font_card_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="เปรียบเทียบรายรับ" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.v7.widget.GridLayout>
 
 
+        </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
