@@ -4,8 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.example.pchrp.projectdashboard.fragment.FragmentPay;
 import com.example.pchrp.projectdashboard.fragment.FragmentNotPay;
+import com.example.pchrp.projectdashboard.fragment.FragmentPay;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
 

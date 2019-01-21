@@ -1,7 +1,5 @@
 package com.example.pchrp.projectdashboard.activity;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -45,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         imgbill = (ImageView)findViewById(R.id.imgbill);
         imgpay = (ImageView)findViewById(R.id.imgpay);
+
+
 
         cv_bill.setOnClickListener(this);
         Cv_pay.setOnClickListener(this);

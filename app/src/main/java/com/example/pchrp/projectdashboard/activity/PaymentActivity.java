@@ -1,55 +1,65 @@
 package com.example.pchrp.projectdashboard.activity;
 
-import android.net.Uri;
-import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.PagerAdapter;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
 
 import com.example.pchrp.projectdashboard.R;
-import com.example.pchrp.projectdashboard.fragment.FragmentPay;
-import com.example.pchrp.projectdashboard.fragment.FragmentNotPay;
 
-public class PaymentActivity extends AppCompatActivity implements FragmentPay.OnFragmentInteractionListener, FragmentNotPay.OnFragmentInteractionListener {
+import com.example.pchrp.projectdashboard.fragment.FragmentNotPay;
+import com.example.pchrp.projectdashboard.fragment.FragmentPay;
+
+public class PaymentActivity extends AppCompatActivity {
+
+    private SectionsPagerAdapter mSectionsPagerAdapter;
+
+    private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
-        TabLayout tabLayout = (TabLayout)findViewById(R.id.tablayoutpay);
-        tabLayout.addTab(tabLayout.newTab().setText("โต๊ะที่ชำระแล้ว"));
-        tabLayout.addTab(tabLayout.newTab().setText("โต๊ะที่รอชำระ"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
-        final ViewPager viewPager = (ViewPager)findViewById(R.id.pager);
-        final PagerAdapter adapter = new com.example.pchrp.projectdashboard.util.PagerAdapter(getSupportFragmentManager()
-                ,tabLayout.getTabCount());
-        viewPager.setAdapter(adapter);
-        viewPager.setOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        mViewPager = (ViewPager) findViewById(R.id.pager);
+        mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
+        mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
+    public class SectionsPagerAdapter extends FragmentPagerAdapter {
+
+        public SectionsPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            switch (position){
+                case 0:
+                    return new FragmentPay();
+                default:
+                    return new FragmentNotPay();
+            }
+        }
+
+        @Override
+        public int getCount() {
+            return 2;
+        }
+
 
     }
 }
